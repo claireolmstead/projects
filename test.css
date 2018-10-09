@@ -1,0 +1,25 @@
+.nav {
+
+	background-color: #FA6B58;
+	padding: 0px;
+	margin: 0px;
+
+}
+a {
+	color: white;
+}
+.active a{
+	background-color: #99BEE8 !important;
+	padding: 0px;
+	margin:0px;
+	color: white;
+}
+.active {
+color: white;
+}
+
+body {
+	background-color: #99BEE8;
+	padding: 0px;
+	margin: 0px;
+}
