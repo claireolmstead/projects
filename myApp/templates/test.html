@@ -1,0 +1,206 @@
+<!-- Group 1 -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <title>Group 1 Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="test.css" rel="stylesheet">
+</head>
+  <body>
+    <!-- insert your code here -->
+
+    <ul class="nav nav-tabs nav-justified">
+  <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+  <li><a data-toggle="tab" href="#menu1">Recent</a></li>
+  <li><a data-toggle="tab" href="#menu2">Today's Rankings</a></li>
+  <li><a data-toggle="tab" href="#menu3">Rankings</a></li>
+  <li><a data-toggle="tab" href="#menu4">Login/Register</a></li>
+
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h3>HOME</h3>
+    <p>This could be a login page or something like that</p>
+</div>
+  <div id="menu1" class="tab-pane fade">
+    <h3>Recent Postings</h3>
+    <p>This can store the new data we are pulling in from whereever it may be.</p>
+    <div class="media">
+  <div class="media-left">
+    <img src="https://cfcdnpull-creativefreedoml.netdna-ssl.com/wp-content/uploads/2017/06/Twitter-featured.png" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">John Doe @JohnDoe123</h4>
+    <p>This could be a tweet about something</p>
+  </div>
+  <script type="text/javascript">
+    var likes = 0;
+    function like(){
+      likes = likes + 1;
+        document.getElementById("show").innerHTML = likes;
+        
+
+    }
+  </script>
+  <button id="button" onclick="like()" style="color: black">Like</button>
+  <h2><p type="text" id="show"></p></h2>
+  <div class="media">
+  <div class="media-left">
+    <img src="https://vignette.wikia.nocookie.net/solarcooking/images/b/b0/Ny_times_logo.png/revision/latest?cb=20160715164128" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">New York Times - 10/08/2018 2:45 pm MST</h4>
+    <p>This could be a New York Times Headline</p>
+  </div>
+  <script type="text/javascript">
+    var likes2 = 0;
+    function like2(){
+      likes2 = likes2 + 1;
+        document.getElementById("show2").innerHTML = likes2;
+        
+
+    }
+  </script>
+  <button id="button2" onclick="like2()" style="color: black">Like</button>
+  <h2><p type="text" id="show2"></p></h2>
+  <div class="media">
+  <div class="media-left">
+    <img src="https://pbs.twimg.com/profile_images/833089210709991427/DgBWoB18_400x400.jpg" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">LA Times - 10/08/2018 2:41 pm MST</h4>
+    <p>This could be an LA Times Headline</p>
+  </div>
+  <script type="text/javascript">
+    var likes3 = 0;
+    function like3(){
+      likes3 = likes3 + 1;
+        document.getElementById("show3").innerHTML = likes3;
+        
+
+    }
+  </script>
+  <button id="button3" onclick="like3()" style="color: black">Like</button>
+  <h2><p type="text" id="show3"></p></h2>
+  <div class="media">
+  <div class="media-left">
+    <img src="https://www.w3schools.com/bootstrap/img_avatar1.png" class="media-object" style="width:60px">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">John Doe</h4>
+    <p>This could be a user input from John Doe</p>
+  </div>
+  <script type="text/javascript">
+    var likes4 = 0;
+    function like4(){
+       likes4 = likes4 + 1;
+        document.getElementById("show4").innerHTML = likes4;
+        
+
+    }
+  </script>
+  <button id="button4" onclick="like4()" style="color: black">Like</button>
+  <h2><p type="text" id="show4"></p></h2>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  <div id="menu2" class="tab-pane fade">
+    <h3>Today's Rankings Page</h3>
+    <p>This can be where we put the data items in ranked order from favorite to least favorite of items posted today</p>
+  </div>
+  <div id="menu3" class="tab-pane fade">
+    <h3>All-Time Rankings Page</h3>
+    <p>This can be where we put the data items in ranked order from favorite to least favorite of all items posted</p>
+  </div>
+  <div id="menu4" class="tab-pane fade">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-6">
+                <a href="#" class="active" id="login-form-link">Login</a>
+              </div>
+              <div class="col-xs-6">
+                <a href="#" id="register-form-link">Register</a>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group text-center">
+                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                    <label for="remember"> Remember Me</label>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="text-center">
+                          <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
