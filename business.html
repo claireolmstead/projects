@@ -2,48 +2,76 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
         <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="news.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
 
 	<title>Business</title>
 </head>
-<body class="mt-3">
-	<div>
-		<a class="float-right mr-3" href="signin.html" target="_blank">LOG IN</a><br />
-		<nav class="navbar p-4 navbar-expand-lg navbar-light bg-light">
-			<div class="mx-auto">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item mr-5">
-						<a href="home.html">HOME</a>
-					</li>
-					<li class="nav-item mr-5">
-						<a href="sports.html">SPORTS</a>
-					</li>
-					<li class="nav-item mr-5">
-						<a href="politics.html">POLITICS</a>
-					</li>
-					<li class="nav-item mr-5">
-						<a href="business.html">BUSINESS</a>
-					</li>
-					<li class="nav-item mr-5">
-						<a href="profile.html">MY PROFILE</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+<body id="business-page">
+	<div class="navbar">
+  		<a href="home.html">Home</a>
+  		<a href="sports.html">Sports</a>
+  		<a href="politics.html">Politics</a>
+  		<a href="business.html">Business</a>
+  		<a id="profile" href="profile.html">My Profile</a>
 	</div>
 
-	<div class="m-5">
-		<h1>BUSINESS</h1>
-		<section>
-			This is where the business section is.
-		</section>
-	</div>
+    <header class="heading">
+        <h1 id="title1">BUSINESS</h1>
+        <aside>News and analysis on Wall Street, technology, media, international business, banking and the stock market.</aside>
+    </header>
 
+	<main class="container">
+        <article>
+    		<div class="card" style="width: 30rem; margin-left: 15px; margin-bottom: 15px; margin-top: 15px;">
+      	         <img class="card-img-top" src={{ image }} alt="Card image cap">
+      	         <div class="card-body">
+        	       <h5 class="card-title">{{ title }}</h5>
+                   <p class="card-text">{{ description }}</p>
+        	       <a href={{ url }} class="btn btn-primary" target="_blank">Continue Reading</a>
+      	         </div>
+    	   </div>
+        </article>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+        <p>
+            more
+        </p>
+    </main>
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    </body>
 </html>
